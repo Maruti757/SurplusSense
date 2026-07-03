@@ -18,7 +18,7 @@ export const SocketProvider = ({ children }) => {
   const { user } = useAuth();
 
   useEffect(() => {
-    const newSocket = io('http://localhost:5000', {
+    const newSocket = io('https://surplussense-backend.onrender.com', {
       transports: ['websocket', 'polling']
     });
 
