@@ -35,7 +35,7 @@ app.use('/uploads/ads', express.static(path.join(__dirname, 'uploads/ads')));
 app.use('/api/ocr', ocrRoutes);
 
 // MongoDB Connection
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/foodshare';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://marutim1429_db_user:R54IS0WXBezpuJYt@cluster0.cuxvzci.mongodb.net/';
 
 mongoose.connect(MONGO_URI)
   .then(async () => {
