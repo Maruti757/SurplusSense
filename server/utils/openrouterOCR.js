@@ -63,7 +63,7 @@ async function tryModel(model, base64Image, mimeType, prompt) {
           headers: {
             Authorization: `Bearer ${OPENROUTER_API_KEY}`,
             "Content-Type": "application/json",
-            "HTTP-Referer": "http://localhost:5000",
+            "HTTP-Referer": "https://surplussense-backend.onrender.com",
             "X-Title": "FoodShare",
           },
           timeout: 60000,
